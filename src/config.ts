@@ -1,5 +1,5 @@
 
-interface DegenlendConfig {
+export interface DegenlendConfig {
     apiBaseUrl?: string;
 }
 
@@ -16,4 +16,9 @@ export function setConfig(newConfig: DegenlendConfig): void {
         ...config,
         ...newConfig,
     };
+}
+
+export default {
+    getConfig,
+    setConfig,
 }
